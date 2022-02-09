@@ -1,0 +1,19 @@
+            /*Renuka.D ADCGWK  Asisgnment-2*/
+/*To print sum of array numbers using arrays of pointer*/
+#include<stdio.h>
+int main()
+{
+    int a[5];
+    int i,sum=0;
+    int *ptr;
+    printf("\nEnter array elements:");
+    for(i=0;i<5;i++)
+    scanf("%d",&a[i]);
+    ptr=a;
+    for(i=0;i<5;i++) 
+    {
+        sum=sum+*ptr;
+        ptr++;
+    }
+    printf("\nThe sum is: %d",sum);
+}
